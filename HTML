@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cima de la Lima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .widget {
+            margin-top: 2rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animación para cambiar el color del h1 */
+        @keyframes color-change {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: red;
+            }
+            100% {
+                color: blue;
+            }
+        }
+
+        h1 {
+            animation: color-change 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cima de la Lima</h1>
+    </header>
+    <main>
+        <h2>Aquí, en Cima de la Lima, puedes ver todo sobre el clima actual.</h2>
+        <p>No se :D</p>
+
+        
+        <div class="widget">
+            <h3>Clima Actual</h3>
+            <!-- Puedes usar un servicio como OpenWeatherMap para integrar un widget -->
+            <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+        </div>
+       <div class="widget">
+            <h3>Reloj Digital</h3>
+            <iframe src="https://free.timeanddate.com/clock/i7jf7vls/n68/tlw" frameborder="0" width="150" height="150"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Samuel.inc. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
